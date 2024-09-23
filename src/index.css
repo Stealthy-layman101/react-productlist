@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+body,html{
+    background-color:  hsl(13, 31%, 94%);
+    font-family: 'Red hat text';
+}
+
+.heading{
+    color: hsl(14, 86%, 22%);
+    margin-left: 1.2rem;
+}
+
+.cartimg{
+    display: block;
+    margin: 0 auto;
+}
+
+.mobile_pic{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.addcartdiv, .amountdiv{
+    display: flex;
+    position: relative;
+    bottom: 1.6rem;
+    border: 1px solid hsl(14, 80%, 20%);
+    border-radius: 25px;
+    width: 45%;
+    margin: 0 auto;
+    background-color: hsl(20, 50%, 98%);
+}
+
+.amountdiv{
+    display: none;
+    border: 1px solid hsl(14, 80%, 20%);
+    border-radius: 25px;
+    justify-content: center;
+    position: relative;
+    height: 53px;
+    bottom: 5rem;
+    background-color: hsl(14, 86%, 42%);
+}
+
+.amount{
+    position: relative;
+    right: 0.3rem;
+    color: white;
+}
+
+ .minus, .plus{
+    position: relative;
+    top: 1rem;
+    right: 2rem;
+}
+
+.plus{
+    left: 2rem;
+}
+
+.addtext{
+    font-weight: 600;
+    position: relative;
+    right: 1.2rem;
+}
+
+.dessert p{
+    margin-left: 1.2rem;
+}
+
+.p1 {
+    margin-top: -1rem;
+    color: hsl(10, 40%, 50%);
+    font-weight: 400;
+  }
+
+.p2 {
+    margin-top: -0.5rem;
+    color: hsl(20, 90%, 10%);
+    font-weight: 600;
+}
+
+.p3 {
+    margin-top: -0.5rem;
+    color: hsl(14, 86%, 42%);
+    font-weight: 700;
+}
+
+.cartdiv{
+    background-color: hsl(20, 50%, 98%);
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem;  
+}
+
+.emptycartimg{
+    display: block;
+    margin: 0 auto;  
+}
+
+.emptycartp{
+    text-align: center;
+    color: hsl(12, 20%, 44%);
+    font-weight: 500;
+}
+
+.cartdiv h1{
+    position: relative;
+    right: 0.5rem;
+    color: hsl(14, 86%, 42%);
+}
+  
+.purchasesdiv, .purchasesdiv2, .purchasesdiv3, .purchasesdiv4, .purchasesdiv5, .purchasesdiv6, .purchasesdiv7, .purchasesdiv8, .purchasesdiv9{
+    display: none;
+    margin-top: -1rem;
+}
+
+.dessertname{
+    color: hsl(0, 10%, 17%);
+    font-weight: 500;
+}
+ 
+.waffleprice1, .buleeprice1, .macaronprice1, .tiramisuprice1, .pistachioprice1, .meringueprice1, .velvetprice1, .brownieprice1, .pannaprice1{
+    margin-left: 1rem;
+}
+
+.waffleprice, .buleeprice, .macaronprice, .tiramisuprice, .pistachioprice, .meringueprice, .velvetprice, .brownieprice, .pannaprice{
+    margin-left: 1rem; 
+    font-weight: 500;
+    color: hsl(7, 20%, 60%);
+}
+
+.removeitem{
+    position: sticky;
+    left: 19rem;
+}
+
+.carttotal{
+    margin: 1rem 0rem -1rem 1rem; 
+    display: none;
+    justify-content: space-between;
+}
+
+.order{
+    margin: 2.5rem 0rem 4rem -1rem;
+    font-weight: 500;
+    color: hsl(0, 20%, 17%);
+}
+
+.ordertotal{
+    font-size: 2rem;
+    font-weight: 900;
+    color: hsl(0, 20%, 17%);
+}
+
+.carbondiv{
+    display: none;
+    justify-content: center;
+}
+
+.confirmbtn{
+    display: none;
+    padding: 1rem 5rem;
+    border: none;
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    border-radius: 20px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.neworderbtn{
+    display: none;
+    position: relative;
+    padding: 1rem 5rem;
+    border: none;
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    border-radius: 20px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.orderimg{
+    display: none;
+    position: relative;
+}
+
+.confirmp{
+    display: none;
+    position: relative;
+    right: 0.4rem;
+    bottom: 2rem;
+   color: hsl(20, 90%, 10%);
+   font-size: 3rem;
+   font-weight: 900;  
+}
+
+.enjoyp{
+    display: none;
+    position: relative;
+    bottom: 4rem;
+}
+
+ .thumbnail{
+    display: none;
+    margin-bottom: -6rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+} 
+
+.scrollable-content{
+    max-height: 100%;
+    padding: 1rem;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Overlay to disable interaction with the rest of the page */
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Optional: darker background */
+    z-index: 999; /* Slightly lower z-index than the content div */
+    pointer-events: auto; /* Allow clicks to pass through the overlay itself */
+}
+
+.desktopimg{
+    display: none;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    body,html{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .mobile_pic{
+        display: none;
+    }
+
+    .desktopimg{
+        display: flex;
+        border-radius: 10px;
+        width: 200px;
+    }
+
+    .heading{
+        padding: 3rem 3rem 3rem 4rem;
+    }
+
+    .maindiv{
+        display: grid;
+        grid-template-columns: repeat(3, 0.2fr);
+        padding: 0rem 2rem 0rem 5rem;
+    }
+
+    .cartdiv{
+        position: relative;
+        bottom: 154vh;
+        left: 25vw;
+        width: 250px;
+    }
+
+    .addcartdiv, .amountdiv{
+        right: 2.4rem;
+    }
+
+    .addcartdiv:hover{
+        cursor: pointer;
+    }
+
+    .cartimg{
+        position: relative;
+        left: 0.5rem;
+    }
+
+    .addtext{
+        right: 0.5rem;
+    }
+
+     .p1, .p2, .p3, .minus {
+        position: relative;
+        right: 1rem;
+      }
+
+      .plus{
+        left: 1rem;
+      }
+
+      .plus:hover, .minus:hover, .confirmbtn:hover, .removeitem:hover, .neworderbtn:hover{
+        cursor: pointer;
+      }
+
+      .removeitem{
+        left: 100rem;
+      }
+
+      .confirmbtn, .carbondiv{
+        position: relative;
+        bottom: 68rem;
+        left: 24rem;
+      }
+
+      .carbondiv{
+        bottom: 67.5rem;
+      }
+}
